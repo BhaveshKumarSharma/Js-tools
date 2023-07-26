@@ -7,7 +7,7 @@ export const WordCounter = () => {
   const [wordCount, setWordCount] = useState(0);
   const [inputText, setInputText] = useState("");
 
-  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInputChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     setInputText(event.target.value);
   };
 
