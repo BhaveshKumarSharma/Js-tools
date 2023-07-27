@@ -25,7 +25,7 @@ export const WordCounter = () => {
       <h1 className="bg-background text-foreground font-mono">Count Words</h1>
       <textarea
         id="input"
-        className="bg-accent border border-primary border-rounded-fill text-base rounded- "
+        className="bg-accent border border-primary border-rounded-fill text-base rounded w-full h-40 p-4 mb-4 resize-y"
         placeholder="Enter text"
         rows={10}
         cols={70}
