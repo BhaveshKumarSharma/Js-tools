@@ -1,6 +1,4 @@
 "use client";
-
-import { Button } from "@/components/ui/button";
 import React, { useState } from "react";
 
 export const WordCounter = () => {
@@ -33,7 +31,12 @@ export const WordCounter = () => {
         autoFocus
       ></textarea>
       <div>
-        <Button onClick={handleCount}>Count Words</Button>
+        <button
+          className="rounded-lg border-0 bg-foreground text-background  p-3"
+          onClick={handleCount}
+        >
+          Count Words
+        </button>
       </div>
       <div className="font-bold font-sans text-xl mt-3">
         Total number of Words: <span>{wordCount}</span>
