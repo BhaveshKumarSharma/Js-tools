@@ -19,22 +19,22 @@ export const WordCounter = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container mb-3 ">
       <h1 className="bg-background text-foreground font-mono">Count Words</h1>
-      <textarea
-        id="input"
-        className="bg-accent border border-primary border-rounded-fill text-base rounded w-full h-40 p-4 mb-4 resize-y"
-        placeholder="Enter text"
-        rows={10}
-        cols={70}
-        onChange={handleInputChange}
-        autoFocus
-      ></textarea>
-      <div>
-        <button
-          className="rounded-lg border-0 bg-foreground text-background  p-3"
-          onClick={handleCount}
-        >
+      <div className="form-control">
+        <label>Enter text Here:</label>
+        <textarea
+          id="input"
+          className="textarea-y bg-accent"
+          placeholder="Enter text"
+          rows={10}
+          cols={70}
+          onChange={handleInputChange}
+          autoFocus
+        ></textarea>
+      </div>
+      <div className="my-3">
+        <button className="button-primary button-sm " onClick={handleCount}>
           Count Words
         </button>
       </div>
